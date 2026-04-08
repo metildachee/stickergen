@@ -246,14 +246,14 @@ def extract_stickers_with_frequencies(csv_path, output_file=None):
 # Main execution
 if __name__ == "__main__":
     # File path
-    csv_path = "/data/metchee/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final_gt_not_in_history.csv"
+    csv_path = "/data/<>/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final_gt_not_in_history.csv"
     
     print("="*70)
     print("EXTRACTING UNIQUE STICKER IDs")
     print("="*70)
     
     # Option 1: Full analysis with multiple outputs
-    output_dir = "/data/metchee/projects/sticker_gen/dataset/new_all/sticker_ids"
+    output_dir = "/data/<>/projects/sticker_gen/dataset/new_all/sticker_ids"
     results = extract_all_unique_sticker_ids(csv_path, output_dir)
     
     # Option 2: Simple extraction (just the list)
@@ -261,7 +261,7 @@ if __name__ == "__main__":
     print("SIMPLE EXTRACTION")
     print("="*70)
     
-    simple_output = "/data/metchee/projects/sticker_gen/dataset/new_all/all_unique_sticker_ids.txt"
+    simple_output = "/data/<>/projects/sticker_gen/dataset/new_all/all_unique_sticker_ids.txt"
     simple_list = extract_simple_unique_sticker_ids(csv_path, simple_output)
     
     # Option 3: With frequencies

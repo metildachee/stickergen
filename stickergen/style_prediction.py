@@ -21,9 +21,9 @@ warnings.filterwarnings('ignore')
 # ======================
 class Config:
     # Paths
-    STYLE_LABEL_PATH = "/data/metchee/projects/sticker_gen/style_labeling/sticker_style_classification.csv"
-    TRAIN_CSV_PATH = "/data/metchee/projects/sticker_gen/dataset/new_all/release/train.csv"
-    TEST_CSV_PATH = "/data/metchee/projects/sticker_gen/dataset/new_all/release/val.csv"
+    STYLE_LABEL_PATH = "/data/<>/projects/sticker_gen/style_labeling/sticker_style_classification.csv"
+    TRAIN_CSV_PATH = "/data/<>/projects/sticker_gen/dataset/new_all/release/train.csv"
+    TEST_CSV_PATH = "/data/<>/projects/sticker_gen/dataset/new_all/release/val.csv"
     
     # Model parameters
     BATCH_SIZE = 32

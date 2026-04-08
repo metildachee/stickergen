@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load your CSV file
-df = pd.read_csv('/data/metchee/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final.csv')
+df = pd.read_csv('/data/<>/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final.csv')
 
 def remove_search_sticker_from_history(row):
     """
@@ -48,7 +48,7 @@ df = df[df['history_cleaned'].str.strip().astype(bool)]
 df = df.drop('history_cleaned', axis=1)
 
 # Save the cleaned DataFrame
-output_path = '/data/metchee/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final_gt_not_in_history.csv'
+output_path = '/data/<>/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final_gt_not_in_history.csv'
 df.to_csv(output_path, index=False)
 
 print(f"Cleaning complete! File saved to: {output_path}")

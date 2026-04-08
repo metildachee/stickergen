@@ -144,8 +144,8 @@ def remove_duplicates_specific_columns(input_file, output_file, columns_to_check
 # Main execution
 if __name__ == "__main__":
     # File paths
-    input_file = "/data/metchee/projects/sticker_gen/dataset/new_all/search_based_sequences_duplicates.csv"
-    output_file = "/data/metchee/projects/sticker_gen/dataset/new_all/search_based_sequences_dedup_duplicates.csv"
+    input_file = "/data/<>/projects/sticker_gen/dataset/new_all/search_based_sequences_duplicates.csv"
+    output_file = "/data/<>/projects/sticker_gen/dataset/new_all/search_based_sequences_dedup_duplicates.csv"
     
     print("=" * 70)
     print("REMOVING DUPLICATE ROWS")
@@ -154,21 +154,6 @@ if __name__ == "__main__":
     # Option 1: Remove all duplicates (entire row must match)
     print("\n[Option 1] Removing all duplicate rows (entire row must match):")
     dedup_df = remove_duplicate_rows(input_file, output_file)
-    
-    # Option 2: Create version with occurrence counts (uncomment if needed)
-    # output_with_counts = "/data/metchee/projects/sticker_gen/dataset/new_all/search_based_sequences_with_counts.csv"
-    # print("\n[Option 2] Creating version with duplicate counts:")
-    # counts_df = remove_duplicates_with_counts(input_file, output_with_counts)
-    
-    # Option 3: Remove duplicates based on specific columns (uncomment if needed)
-    # Example: remove rows where user_id, search_sticker_id, and search_query are the same
-    # specific_output = "/data/metchee/projects/sticker_gen/dataset/new_all/search_based_sequences_dedup_specific.csv"
-    # print("\n[Option 3] Removing duplicates based on specific columns:")
-    # specific_df = remove_duplicates_specific_columns(
-    #     input_file, 
-    #     specific_output,
-    #     columns_to_check=['user_id', 'search_sticker_id', 'search_query']
-    # )
 
 # If you want to also see which specific rows are most duplicated:
 def analyze_top_duplicates(input_file, top_n=10):

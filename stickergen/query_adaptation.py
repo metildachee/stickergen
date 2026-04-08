@@ -8,7 +8,7 @@ api_key = ""
 client = ZhipuAI(api_key=api_key)  # Replace with your actual API key
 
 # Load dataset
-df = pd.read_csv('/data/metchee/projects/sticker_gen/dataset/new_all/release/test.csv')
+df = pd.read_csv('/data/<>/projects/sticker_gen/dataset/new_all/release/test.csv')
 
 # System prompt for query rewriting
 system_prompt = """You are an assistant that rewrites short, incomplete, or noisy user search queries into clean image generation prompts by conservatively inferring the user's intended meaning.

@@ -4,8 +4,8 @@ import os
 from sklearn.model_selection import train_test_split
 
 # Simple user-based split
-csv_path = "/data/metchee/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final_gt_not_in_history.csv"
-output_dir = "/data/metchee/projects/sticker_gen/dataset/new_all/release"
+csv_path = "/data/<>/projects/sticker_gen/dataset/new_all/release/search_based_sequences_dedup_duplicates_final_gt_not_in_history.csv"
+output_dir = "/data/<>/projects/sticker_gen/dataset/new_all/release"
 
 # Load data
 df = pd.read_csv(csv_path, dtype={'user_id': str})

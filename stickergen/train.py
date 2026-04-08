@@ -17,14 +17,14 @@ from PIL import Image
 import re
 
 # ================= CONFIGURATION =================
-TEST_CSV_PATH = "/data/metchee/projects/sticker_gen/dataset/new_all/release/test.csv"
-STYLE_CSV_PATH = "/data/metchee/projects/sticker_gen/style_prediction/single_query_only/baseline4b_predictions_add.csv"
-STICKER_DIR = "/data/metchee/data/sticker-gen/sticker-gen_png"
-LORA_BASE_DIR = "/data/metchee/repos/sd-scripts/train_scripts"
-SDXL_CKPT = "/data/metchee/pretrained_models/stable-diffusion-xl-base-1.0"
+TEST_CSV_PATH = "/data/<>/projects/sticker_gen/dataset/new_all/release/test.csv"
+STYLE_CSV_PATH = "/data/<>/projects/sticker_gen/style_prediction/single_query_only/baseline4b_predictions_add.csv"
+STICKER_DIR = "/data/<>/data/sticker-gen/sticker-gen_png"
+LORA_BASE_DIR = "/data/<>/repos/sd-scripts/train_scripts"
+SDXL_CKPT = "/data/<>/pretrained_models/stable-diffusion-xl-base-1.0"
 OUTPUT_DIR = "./test_generation_results"  # Will be overridden by command line argument
-GENERATION_SCRIPT = "/data/metchee/repos/sd-scripts/sdxl_gen_img.py"
-QUERY_REWRITE_PATH = "/data/metchee/projects/sticker_gen/query_rewrite/short_v2.csv"
+GENERATION_SCRIPT = "/data/<>/repos/sd-scripts/sdxl_gen_img.py"
+QUERY_REWRITE_PATH = "/data/<>/projects/sticker_gen/query_rewrite/short_v2.csv"
 
 # Trigger word mapping
 # TRIGGER_WORDS = {

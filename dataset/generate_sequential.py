@@ -331,18 +331,18 @@ def create_search_based_sequences(history_path: str, searches_path: str, output_
     return result_df
 
 # Paths
-history_path = "/data/metchee/projects/sticker_gen/dataset/all/history_all.csv"
-searches_path = "/data/metchee/projects/sticker_gen/dataset/all/searches_all_duplicates.csv"
+history_path = "/data/<>/projects/sticker_gen/dataset/all/history_all.csv"
+searches_path = "/data/<>/projects/sticker_gen/dataset/all/searches_all_duplicates.csv"
 
 # Option 1: Create comprehensive sequential examples (predict every next sticker)
-# output_path1 = "/data/metchee/projects/sticker_gen/dataset/new_allsequential_training_examples.csv"
+# output_path1 = "/data/<>/projects/sticker_gen/dataset/new_allsequential_training_examples.csv"
 # print("=" * 60)
 # print("Creating Comprehensive Sequential Training Examples")
 # print("=" * 60)
 # df1 = create_sequential_training_examples(history_path, searches_path, output_path1, min_sequence_length=2)
 
 # Option 2: Create only search-based sequences
-output_path2 = "/data/metchee/projects/sticker_gen/dataset/new_all/search_based_sequences_duplicates.csv"
+output_path2 = "/data/<>/projects/sticker_gen/dataset/new_all/search_based_sequences_duplicates.csv"
 print("\n" + "=" * 60)
 print("Creating Search-Based Sequences Only")
 print("=" * 60)

@@ -15,9 +15,9 @@ warnings.filterwarnings('ignore')
 # ============================================================================
 class Config:
     # Paths
-    STYLE_LABEL_CSV = "/data/metchee/projects/sticker_gen/style_labeling/sticker_style_label_k30.csv"
-    STICKERS_PNG_PATH = "/data/metchee/data/stickerqueries/stickers_png"
-    OUTPUT_DIR = "/data/metchee/projects/sticker_gen/style_labeling/lora_training_data"
+    STYLE_LABEL_CSV = "/data/<>/projects/sticker_gen/style_labeling/sticker_style_label_k30.csv"
+    STICKERS_PNG_PATH = "/data/<>/data/stickerqueries/stickers_png"
+    OUTPUT_DIR = "/data/<>/projects/sticker_gen/style_labeling/lora_training_data"
     
     # Processing settings
     COPY_MODE = True  # True to copy files, False to create symlinks (saves space)
